@@ -1,0 +1,120 @@
+@keyframes splash {
+    0% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 1;
+    }
+
+    to {
+        opacity: 0;
+        visibility: hidden;
+    }
+}
+
+.splash {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--yellow);
+    animation: splash 1.5s ease-in-out forwards
+}
+
+.splash i {
+    color:#fff;
+    font-size: 50px;
+}
+
+.splash span {
+    font-size: 40px;
+    margin-top: 20px;
+    color: white;
+    letter-spacing: -1px;
+    font-weight: 700;
+}
+
+.circle-button-welcome {
+    margin-top: 110px;
+}
+
+.tit-welcome {
+    margin-top: 50px;
+}
+
+.tit-welcome p {
+    font-size: 22px;
+    color: #333;
+    line-height: 30px;
+    font-weight: 300;
+    padding-top: 40px;
+}
+
+.login {
+    display: flex;
+    flex-direction: column;
+    padding-top: 20px;
+}
+
+.login input[required] {
+    height: 60px;
+    border-radius: 40px;
+    padding: 0 40px;
+    background-color: var(--beige);
+    margin-top: 10px;
+}
+
+.login input[required]::placeholder {
+    font-size: 16px;
+    color: #666;
+}
+
+.login input[required]:focus {
+    border: 2px solid var(--yellow);
+}
+
+.login .login__btn {
+    height: 60px;
+    border-radius: 24px;
+    cursor: pointer;
+    margin-bottom: 15px;
+    font-size: 20px;
+    box-shadow: 0px 5px 0px rgba(0, 0, 0, 1);
+    background-color: #fff;
+}
+
+.login input.login__btn {
+    background-color: var(--yellow);
+    margin-top: 20px;
+}
+
+.login__find {
+    font-size: 18px;
+    font-weight: 300;
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.login__find a {
+    color: var(--blue);
+    margin-left: 10px;
+}
+
+.copyr {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
+    color: #333;
+    margin-top: 80px;
+    font-weight: 300;
+
+}

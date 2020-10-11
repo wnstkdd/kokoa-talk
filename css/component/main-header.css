@@ -1,0 +1,30 @@
+.main-header {
+    margin-top: 120px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.main-header i {
+    font-size: 40px;
+    margin-left: 30px;
+}
+
+@keyframes cog-rotate {
+    0% {
+        transform: rotateZ(0deg)
+    }
+
+    100% {
+        transform: rotateZ(360deg)
+    }
+}
+
+.main-header .fa-cog {
+    animation: cog-rotate 2s 0s linear infinite
+}
+
+.main-header .fa-cog:hover {
+    animation: none;
+    color: red;0
+}

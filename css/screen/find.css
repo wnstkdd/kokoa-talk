@@ -1,0 +1,151 @@
+.recom {
+    border-bottom: var(--border);
+}
+
+.recom__txt {
+    color: #666;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 0 80px 0;
+}
+
+.open-chat__header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.open-chat__header__column {
+    display: flex;
+    align-items: flex-end;
+}
+
+.open-chat__header__column a {
+    color: red;
+    margin: 0 5px;
+}
+
+.open-chat__header__column a:hover {
+    color: blue
+}
+
+.open-chat__row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.open-chat__member {
+    display: flex;
+    align-items: center;
+}
+
+.open-chat__member img {
+    width: 24px;
+    border-radius: 50%;
+    border: var(--border);
+    box-shadow: 0px 3px 0px rgba(0, 0, 0, 1);
+}
+
+.open-chat__row__column:first-child {
+    display: flex;
+    flex-direction: column;
+}
+
+.open-chat__tit {
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.open-chat__hash {
+    margin: 7px 0;
+    font-size: 18px;
+    color: #666;
+    font-size: 16px;
+}
+
+.member-count {
+    margin-left: 10px;
+    color: #666;
+    font-size: 15px;
+}
+
+.divider {
+    width: 2px;
+    height: 15px;
+    background-color: #666;
+    margin: 0 10px;
+}
+
+.member-active {
+    color: red;
+    font-size: 15px;
+}
+
+.open-chat__row__column:last-child {
+    position: relative;
+}
+
+.open-chat__row__column:last-child img {
+    width: 150px;
+    border: var(--border);
+    border-radius: 20px;
+    box-shadow: 0px 5px 0px rgba(0, 0, 0, 1);
+}
+
+.open-chat__heart {
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+    background-color: #fff;
+    border: var(--border);
+    border-radius: 10px;
+    padding: 3px 10px;
+}
+
+.open-chat__row {
+    margin-bottom: 20px;
+}
+
+.open-chat__row:last-child {
+    margin-bottom: 200px;
+}
+
+.open-chat__row:hover .open-chat__tit {
+    color: red;
+}
+
+
+@keyframes heart-beat {
+    0% {
+        color: #000;
+        transform: none;
+
+    }
+
+    25% {
+        color: deeppink;
+        transform: scale(1.2)
+    }
+
+    50% {
+        color: red;
+        transform: none;
+    }
+
+    75% {
+        color: mediumvioletred;
+        transform: scale(1.2)
+    }
+}
+
+.open-chat__row .open-chat__heart i,
+.open-chat__row .open-chat__heart span {
+    will-change: transform, color;
+}
+
+.open-chat__row:hover .open-chat__heart i,
+.open-chat__row:hover .open-chat__heart span {
+    animation: heart-beat 2s ease-in-out infinite
+}

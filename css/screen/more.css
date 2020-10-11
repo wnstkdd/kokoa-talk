@@ -1,0 +1,46 @@
+.user-component__more {
+    margin-top: 20px;
+}
+
+.user-component__txt-wrap i {
+    font-size: 15px;
+    margin-left: 6px;
+    color: hotpink;
+}
+
+.suggestion__icons {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.suggestion__column {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-right: 20px;
+}
+
+.suggestion__column span {
+    margin-top: 15px;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.suggestion__icon {
+    width: 80px;
+    height: 80px;
+    border: var(--border);
+    border-radius: 20px;
+    box-shadow: 0px 5px 0px rgba(0, 0, 0, 1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--yellow)
+}
+
+.suggestion__icon i {
+    font-size: 30px;
+    color: white;
+}
